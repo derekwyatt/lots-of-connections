@@ -1,0 +1,9 @@
+#!/bin/bash
+
+mydir=$(cd $(dirname $0); cd ..; pwd)
+
+kill $(ps -ef | grep src/test/resources/nginx.conf | awk '{print $2}') 2>/dev/null
+
+echo -n "Staring nginx..."
+nginx -c $mydir/src/test/resources/nginx.conf
+echo " Done"
