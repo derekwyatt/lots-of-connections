@@ -1,6 +1,8 @@
 Akka Makes Lots of Connections
 ==============================
 
+**This turned out to be entirely false. Ignore me. :D**
+
 In order to test this you need to have `nginx` installed.
 
 How to Run
